@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack",
-    "dev":"webpack-dev-server"
+    "dev": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/dfa0328/reactDemo/issues"
   },
-  "homepage": "https://github.com/dfa0328/reactDemo#readme"
+  "homepage": "https://github.com/dfa0328/reactDemo#readme",
+  "dependencies": {
+    "webpack": "^3.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^3.0.0"
+  }
 }
