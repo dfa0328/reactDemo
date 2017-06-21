@@ -1,0 +1,20 @@
+{
+  "name": "react-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "dev":"webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfa0328/reactDemo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfa0328/reactDemo/issues"
+  },
+  "homepage": "https://github.com/dfa0328/reactDemo#readme"
+}
