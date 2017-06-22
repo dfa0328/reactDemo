@@ -2,13 +2,15 @@ var path=require('path');
 
 
 
-module.exports={
+var config={
 	entry:'./src/main.js',
 	output:{
-		path:path.resolve(__dirname,'dist'),
+		path:path.resolve(__dirname,'./dist'),
 		filename:'bundle.js'
 	}
 
 
 
 }
+
+module.exports=config;
