@@ -12,7 +12,7 @@ class Main extends React.Component {
   
     render() {
 
-      let {open,title} = this.state;
+      
         return (
 
             <div style ={{height:'100%',position:"relative"}}>
