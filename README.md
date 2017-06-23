@@ -1,4 +1,4 @@
-## 基于webpack搭建一个react项目    
+## webpack工程化   
 
 ### webpack 基础    
 
@@ -34,7 +34,47 @@ $ npm install --save webpack
 
 #### 入口起点(Entry Points）
 
+#### 单个入口语法
+
 用法： `entry: string | Array<string>`
+
+**webpack.config.js**
+
+```
+const config = {
+  entry: {
+    main: './src/main.js'
+  }
+};
+module.exports = config;
+```
+
+简写
+
+```
+const config = {
+  entry: './src/main.js'
+};
+
+module.exports = config;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
