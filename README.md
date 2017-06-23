@@ -17,7 +17,8 @@ $ npm install --save webpack
 ```
 ### webpack简介（配置项有如下几点）
 
-![图片标题](./images/config.jpeg)
+<img src="./images/config.jpeg" width="400" height="500" />
+
 
 
 
