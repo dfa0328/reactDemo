@@ -32,8 +32,9 @@ $ npm install --save webpack
 
 ``` 
 
+#### 入口起点(Entry Points）
 
-
+用法： `entry: string | Array<string>`
 
 
 
