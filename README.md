@@ -32,7 +32,7 @@ $ npm install --save webpack
 
 ``` 
 
-#### 入口起点(Entry Points）
+### 入口起点(Entry Points）
 
 #### 单个入口语法
 
@@ -59,14 +59,27 @@ const config = {
 module.exports = config;
 ```
 
+向 entry 属性传入「文件路径(file path)数组」将创建“多个主入口(multi-main entry)”。传入数组这种方式有助于，在你想要多个依赖文件一起注入，并且将它们的依赖导向(graph)到一个“chunk”时。
 
 
+#### 对象语法
 
+用法： `entry:{[entryChunkName: string]: string|Array<string>}`
 
+**webpack.config.js**
 
+```
+const config = {
+  entry: {
+    app: './src/app.js',
+    vendors: './src/vendors.js'
+  }
+};
 
-
-
+module.exports = config;
+```
+> 对象语法会比较繁琐。然而，这是应用程序中定义入口的最可扩展的方式。
+> **"可扩展的 webpack 配置"**是指，可重用并且可以与其他配置组合使用。这是一种流行的技术，用于将关注点(concern)从环境(environment)、构建目标(build target)、运行时(runtime)中分离。然后使用专门的工具（如 webpack-merge）将它们合并。
 
 
 
