@@ -1,18 +1,25 @@
 var webpack = require('webpack');
 var config = {
-
 	entry:[__dirname+'/src/main.js'],
 	output:{
 		path:__dirname+'/public',
 		filename:'bundle.js'
 	},
-
 	module: {
         loaders: [
 	         { 
 	            test: /\.js$/,
 	            loader: "babel-loader" 
-	         }
+	         },
+	         {
+				test:/\.css$/,
+				loader: "style-loader!css-loader",
+	         },
+	         {
+	         	test:/\.less$/,
+				loader:"style-loader!css-loader!less-loader"
+	         },
+	         
 
         ]
     },

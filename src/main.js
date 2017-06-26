@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import ReactDom from 'react-dom';
+import './index.less';
 
 class Main extends React.Component {
   constructor(props,context){
@@ -15,7 +16,7 @@ class Main extends React.Component {
       
         return (
 
-            <div style ={{height:'100%',position:"relative"}}>
+            <div className="g-main">
                 Hello,world
             </div>
         )
