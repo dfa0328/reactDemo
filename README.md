@@ -32,7 +32,7 @@ $ npm install --save webpack
 
 ``` 
 
-### * 入口起点(Entry Points）
+###  入口起点(Entry Points）
 
 #### 单个入口语法
 
@@ -119,13 +119,15 @@ module.exports = config;
 > 在多页应用中，服务器将为你获取一个新的 HTML 文档。页面重新加载新文档，并且资源被重新下载。然而，这给了我们特殊的机会去做很多事：使用 CommonsChunkPlugin 为每个页面间的应用程序共享代码创建 bundle。由于入口起点增多，多页应用能够在入口起点重用大量代码/模块，这样可以极大的从这些这些技术受益。
 
 
-### * 输出(Output）
+###  输出(Output）
 
-此选项影响 compilation 对象的输出。output 选项控制 webpack 如何向硬盘写入编译文件。注意，即使可以存在多个入口起点，但只指定一个输出配置。
+此选项影响 compilation 对象的输出。`output` 选项控制 webpack 如何向硬盘写入编译文件。注意，即使可以存在多个`入口`起点，但只指定一个`输出`配置。
 
-如果你用了哈希（[hash] 或 [chunkhash]），请确保模块具有一致的顺序。可以使用 OccurrenceOrderPlugin 或 recordsPath。
+如果你用了哈希（`[hash]` 或 `[chunkhash]`），请确保模块具有一致的顺序。可以使用 `OccurrenceOrderPlugin` 或 `recordsPath`。
 
-用法：在 webpack 中配置 output 属性的最低要求是，将它的值设置为一个对象，包括以下两点：
+#### 基本语法
+
+用法：在 webpack 中配置 `output `属性的最低要求是，将它的值设置为一个对象，包括以下两点：
 编译文件的`文件名(filename)`，首选推荐：`// main.js || bundle.js || index.js`
 
 `output.path` 对应一个绝对路径，此路径是你希望一次性打包的目录。
