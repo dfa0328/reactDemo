@@ -20,8 +20,6 @@
   "dependencies": {
     "arr-flatten": "^1.0.3",
     "less": "^2.7.2",
-    "less-loader": "^4.0.4",
-    "less-plugin-clean-css": "^1.5.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "url-loader": "^0.5.9"
@@ -33,6 +31,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.4",
+    "less-loader": "^4.0.4",
+    "less-plugin-clean-css": "^1.5.1",
     "style-loader": "^0.18.2",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0"
