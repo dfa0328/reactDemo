@@ -145,9 +145,11 @@ const config = {
 module.exports = config;
 ```
 
+#### 选项（Option）
 
+以下列出可以向 `output` 属性传入的值。
 
-
+**output.chunkFilename**
 
 
 

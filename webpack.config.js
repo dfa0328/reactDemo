@@ -19,7 +19,10 @@ var config = {
 	         	test:/\.less$/,
 				loader:"style-loader!css-loader!less-loader"
 	         },
-	         
+	         {
+	         	test:/\.(png|jpg|gif)$/,
+				loader:"url?limit=25000"
+	         },
 
         ]
     },
