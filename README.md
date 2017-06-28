@@ -151,7 +151,15 @@ module.exports = config;
 
 **output.chunkFilename**
 
+非入口的 chunk(non-entry chunk) 的文件名，路径相对于 `output.path` 目录。
 
+`[id]` 被 chunk 的 id 替换。
+
+`[name]` 被 chunk 的 name 替换（或者，在 chunk 没有 name 时使用 id 替换）。
+
+`[hash]` 被 compilation 生命周期的 hash 替换。
+
+`[chunkhash]` 被 chunk 的 hash 替换。
 
 
 
