@@ -20,7 +20,7 @@ var config = {
 				loader:"style-loader!css-loader!less-loader"
 	         },
 	         {
-	         	test:/\.(png|jpg|gif)$/,
+	         	test:/\.(png|jpg|gif|jpeg)$/,
 				loader: "url-loader" // 也可以使用 file-loader
 	         },
 

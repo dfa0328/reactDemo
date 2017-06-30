@@ -22362,7 +22362,7 @@ exports = module.exports = __webpack_require__(187)(undefined);
 
 
 // module
-exports.push([module.i, ".g-main {\n  width: 400px;\n  height: 600px;\n  margin: 50px auto;\n  background: pink;\n}\n.g-main img {\n  width: 300px;\n  height: 500px;\n}\n", ""]);
+exports.push([module.i, ".g-main {\n  width: 400px;\n  height: 600px;\n  margin: 50px auto;\n  background: #ccc;\n}\n.g-main img {\n  width: 300px;\n  height: 300px;\n}\n", ""]);
 
 // exports
 
