@@ -17,7 +17,7 @@ class Main extends React.Component {
         return (
 
             <div className="g-main">
-                Hello,world
+               <img src={require('./img.png')} alt=""/>
             </div>
         )
     }

@@ -31,6 +31,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
     "less-loader": "^4.0.4",
     "less-plugin-clean-css": "^1.5.1",
     "style-loader": "^0.18.2",

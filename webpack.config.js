@@ -21,7 +21,7 @@ var config = {
 	         },
 	         {
 	         	test:/\.(png|jpg|gif)$/,
-				loader:"url?limit=25000"
+				loader: "url-loader" // 也可以使用 file-loader
 	         },
 
         ]
