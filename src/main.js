@@ -4,6 +4,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import './index.less';
+import Test from './test.json';
 
 class Main extends React.Component {
   constructor(props,context){
@@ -17,6 +18,16 @@ class Main extends React.Component {
         return (
 
             <div className="g-main">
+              <div className="u-person">
+                {Test.items.map((item,index)=>{
+                  return(
+                      <div className="u-person-detail" key={index}>
+                          <p>姓名：{item.name}</p>
+                          <p>年龄：{item.age}</p>
+                      </div>
+                    )
+                })}
+              </div>
                <img src={require('./img.png')} alt=""/>
             </div>
         )
