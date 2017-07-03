@@ -28,6 +28,7 @@ class Main extends React.Component {
                     )
                 })}
               </div>
+                <p style={{textIndent:40}}>列表图片：</p>
                <img src={require('./img.png')} alt=""/>
             </div>
         )

@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var config = {
-	entry:[__dirname+'/src/main.js'],
+	entry:['webpack/hot/dev-server',__dirname+'/src/main.js'],
 	output:{
 		path:__dirname+'/public',
 		filename:'bundle.js'
@@ -9,7 +9,7 @@ var config = {
         loaders: [
 	         { 
 	            test: /\.js$/,
-	            loader: "babel-loader" 
+	            loader: ["react-hot","babel-loader"]
 	         },
 	         {
 				test:/\.md$/,
@@ -31,8 +31,11 @@ var config = {
 	         	test:/\.(png|jpg|gif|jpeg)$/,
 				loader: "url-loader" // 也可以使用 file-loader
 	         },
+			
+        ],
+     plugins:[
 
-        ]
+     ]
     },
      //webpack-dev-server配置
     devServer: {
