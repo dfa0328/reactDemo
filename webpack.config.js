@@ -1,6 +1,8 @@
 var webpack = require('webpack');
 var config = {
-	entry:['webpack/hot/dev-server',__dirname+'/src/main.js'],
+	//热更新 方法一
+	//entry:['webpack/hot/dev-server',__dirname+'/src/main.js'],
+	entry:[__dirname+'/src/main.js'],
 	output:{
 		path:__dirname+'/public',
 		filename:'bundle.js'
@@ -33,8 +35,12 @@ var config = {
 	         },
 			
         ],
+     //热更新 方法二
+     // plugins:[
+	 //	new webpack.HotModuleReplacementPlugin()
+     // ]
      plugins:[
-
+		new webpack.HotModuleReplacementPlugin()
      ]
     },
      //webpack-dev-server配置
