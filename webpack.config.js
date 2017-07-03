@@ -11,7 +11,7 @@ var config = {
         loaders: [
 	         { 
 	            test: /\.js$/,
-	            loader: ["react-hot-loader","babel-loader"]
+	            loader: "react-hot-loader!babel-loader"
 	         },
 	         {
 				test:/\.md$/,
@@ -48,7 +48,7 @@ var config = {
     devServer: {
         contentBase: './public',//默认webpack-dev-server会为根文件夹提供本地服务器，如果想为另外一个目录下的文件提供本地服务器，应该在这里设置其所在目录（本例设置到"build"目录）
        	port: 8082,//设置默认监听端口，如果省略，默认为"8080"
-        
+        open:'http://localhost:8082'
     }
 
     
