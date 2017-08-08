@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
+    "start": "npm run dev",
+    "dll": "webpack",
     "dev": "webpack-dev-server --inline "
   },
   "repository": {

@@ -41,7 +41,7 @@ var config = {
 	 //	new webpack.HotModuleReplacementPlugin()
     // ]
    plugins:[
- 	//new webpack.HotModuleReplacementPlugin()
+ 	// webpack.HotModuleReplacementPlugin()
    ],
      
      //webpack-dev-server配置
